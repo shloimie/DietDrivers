@@ -1,0 +1,46 @@
+:root{
+  --brand:#3665F3; --brand-dark:#2b55d0;
+  --bg:#F1F5F9; --text:#0f172a; --muted:#64748b;
+  --card:#ffffff; --border:#e2e8f0; --shadow:0 6px 24px rgba(0,0,0,.08);
+  --success:#10b981; --success-bg:#ecfdf5;
+}
+
+*{box-sizing:border-box}
+html,body{padding:0;margin:0}
+body{font-family:ui-sans-serif,system-ui,"Segoe UI",Roboto,Helvetica,Arial;
+  background:var(--bg); color:var(--text)}
+
+.container{min-height:100vh;display:flex;justify-content:center;padding:24px}
+.shell{width:100%;max-width:960px;margin-top:24px}
+
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;box-shadow:var(--shadow)}
+.card-pad{padding:24px}
+
+.hdr{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.hdr-badge{height:48px;width:48px;border-radius:9999px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center}
+
+.h1{font-size:28px;font-weight:800;margin:0}
+.sub{color:var(--muted);margin:4px 0 0}
+
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.flex{display:flex;align-items:center;gap:8px}
+.muted{color:var(--muted)}
+.bold{font-weight:700}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:8px;background:var(--brand);
+  color:#fff;border:none;padding:10px 16px;font-size:14px;font-weight:600;cursor:pointer}
+.btn:hover{background:var(--brand-dark)}
+.btn-outline{background:#fff;color:var(--text);border:1px solid var(--border)}
+.btn-outline:hover{background:#f8fafc}
+
+.progress{height:8px;border-radius:9999px;background:#e5e7eb;overflow:hidden}
+.progress > span{display:block;height:100%;background:var(--brand)}
+
+.pill{height:24px;min-width:24px;border-radius:9999px;background:var(--brand);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:12px}
+
+.stop-card{border-left:8px solid var(--brand);border-radius:16px;overflow:hidden}
+.stop-done{background:var(--success-bg);outline:1px solid #a7f3d0}
+
+.kv{margin-top:4px;color:#334155}
+.link{color:var(--brand);text-decoration:none}
+.link:hover{text-decoration:underline}
